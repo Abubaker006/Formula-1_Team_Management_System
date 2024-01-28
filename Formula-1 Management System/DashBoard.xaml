@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Formula_1_Management_System.DashBoard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Formula_1_Management_System"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style x:Key="CustomNavigationViewItemStyle" TargetType="NavigationViewItem">
+            <Setter Property="Foreground" Value="Black" />
+            <!-- Change color here -->
+        </Style>
+    </Page.Resources>
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+           
+        </Grid.RowDefinitions>
+        <!--Header-->
+        <Border Grid.Row="0" BorderBrush="Black" BorderThickness="0 4 0 4">
+            <StackPanel HorizontalAlignment="Left" Padding="5" Orientation="Horizontal">
+                <Image Source="ms-appx:///Assets/Images/logo.png" Width="200" Height="80"/>
+            </StackPanel>
+        </Border>
+
+        <!--Title-->
+        <Border Grid.Row="1"  Padding="5">
+            <StackPanel VerticalAlignment="Center"  Margin="80 0 80 0">
+            <Grid Margin="120 0 120 0" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--LogoBox-->
+                    <Border Grid.Column="0" Margin="12 0 0 0"  >
+                        <Image  Source="ms-appx:///Assets/Images/subLogo.png" Width="200" Height="90"/>
+                    </Border>
+                <!--Name box-->
+                    <Border Grid.Column="1" Background="#1E1D1D" CornerRadius="10 10 10 10">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" TextAlignment="Center" Text="Formula-1 Team Manager" Style="{StaticResource TitleTextBlockStyle}" Foreground="#fff"  FontFamily="Nico Moji" FontStyle="Normal" LineHeight="1" CharacterSpacing="70" />
+                </Border>
+            </Grid>
+            </StackPanel>
+        </Border>
+
+        <!--Main-Section #D9D9D9-->
+        <Border Grid.Row="2"  Margin="10 5 10 5" CornerRadius="10" Background="Black" >
+
+            <NavigationView x:Name="nvSample" Background="#1E1D1D"
+                            CornerRadius="30"
+                            IsBackButtonVisible="Collapsed"
+                            ItemInvoked="NavigationPanel_Invoked"
+                          >
+
+                <NavigationView.MenuItems  >
+                    <NavigationViewItem Icon="Home" Content="Homepage" Tag="HomePage"   />
+                    <NavigationViewItem Icon="People" Content="Driver Infromation" Tag="DriversInformation"   />
+                    
+                 
+                </NavigationView.MenuItems>
+
+              
+                
+                <Frame x:Name="contentFrame"/>
+            </NavigationView>
+
+        </Border>
+    </Grid>
+</Page>

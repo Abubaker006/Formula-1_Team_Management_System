@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Formula-1 Management System (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Formula-1 Management System (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

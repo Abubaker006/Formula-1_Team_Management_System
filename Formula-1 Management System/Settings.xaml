@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Formula_1_Management_System.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Formula_1_Management_System"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#33333366" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="ErrorInSettings" Margin="5 5 5 5" TextAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
+        <Grid Grid.Row="1">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450"/>
+            <ColumnDefinition Width="490"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0 0 2 0" BorderBrush="White" Padding="0 0 100 0">
+            <TextBlock Text="Logout Account" Margin="0 0 0 50" TextAlignment="Center" Style="{StaticResource TitleTextBlockStyle}"/>
+            <Button Width="300" Padding="5 5 0 5" x:Name="LogoutBtn" Style="{StaticResource AccentButtonStyle}" Content="Logout" Click="LogoutBtn_Click" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Delete Account" Margin="0 0 0 50" TextAlignment="Center" Style="{StaticResource TitleTextBlockStyle}"/>
+            <Button Width="300" Padding="5 5 0 5" x:Name="DeleteAccountBtn" Style="{StaticResource AccentButtonStyle}" Content="Delete Account" Click="DeleteAccount_Click"  />
+        </StackPanel>
+        <Border Grid.Column="2" Margin="5 5 5 5" CornerRadius="10 10 10 10" BorderBrush="Red" BorderThickness="2" >
+            <Image HorizontalAlignment="Center" x:Name="SelectedImage" Source="ms-appx:///Assets/Images/Left.png" Stretch="UniformToFill"/>
+        </Border>
+    </Grid>
+    </Grid>
+</Page>

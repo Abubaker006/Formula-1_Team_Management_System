@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Formula_1_Management_System.EditingPanelnfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Formula_1_Management_System"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        
+        <Grid.Background>
+            <SolidColorBrush Color="#33333366"/>
+        </Grid.Background>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+       
+        <Grid Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="80 0 10 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="150"/>
+                <ColumnDefinition Width="*"/>
+            
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock  Padding="3 3 0 3" Margin="0 5 0 0"  Grid.Row="0" Foreground="White" Text="Team Name:"  Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <TextBlock  Padding="3 3 0 3"  Margin="0 5 0 0"   Grid.Row="1" Foreground="White" Text="Country Name:"  Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <TextBlock  Padding="3 3 0 3"  Margin="0 5 0 0"   Grid.Row="2" Foreground="White" Text="Owner Name:" Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <TextBlock  Padding="3 3 0 3"  Margin="0 5 0 0"   Grid.Row="3" Foreground="White" Text="Podium:" Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <TextBlock  Padding="3 3 0 3"  Margin="0 5 0 0"   Grid.Row="4" Foreground="White" Text="Racing Category:" Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <TextBlock  Padding="3 3 0 3"   Margin="0 5 0 0"  Grid.Row="5" Foreground="White" Text="Number of Grand Prix:" Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <TextBlock  Padding="3 3 0 3"  Margin="0 5 0 0"   Grid.Row="6" Foreground="White" Text="Highest Grid Position:" Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <TextBlock  Padding="3 3 0 3"  Margin="0 5 0 0"   Grid.Row="7" Foreground="White" Text="Championships:" Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <TextBlock  Padding="3 3 0 3"  Margin="0 5 0 0"   Grid.Row="8" Foreground="White" Text="Manufacturer Awards:" Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <TextBlock  Padding="3 3 0 3"  Margin="0 5 0 0"   Grid.Row="9" Foreground="White" Text="Engine Manufacturer:" Style="{StaticResource BodyStrongTextBlockStyle}"/>
+
+
+            <TextBox BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TeamNameTextBox"  Width="300" Padding="5 5 0 5" Margin="0 5 0 10" Grid.Column="1" Grid.Row="0"   PlaceholderText="Enter Team Name" />
+            <TextBox BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="CountryNameTextBox"  Width="300" Padding="5 5 0 5" Margin="0 5 0 10" Grid.Column="1" Grid.Row="1"   PlaceholderText="Enter Country Name" />
+            <TextBox BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="ownnerNameTextbox" Width="300" Padding="5 5 0 5" Margin="0 5 0 10"   Grid.Column="1" Grid.Row="2"   PlaceholderText="Enter Owner Name " />
+            <TextBox BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="podiumTextBox" Width="300" Padding="5 5 0 5" Margin="0 5 0 10"  Grid.Column="1" Grid.Row="3"   PlaceholderText="Enter Number of Team Podiums" />
+            <TextBox BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="highestGridPositionTextbox" Width="300" Padding="5 5 0 5" Margin="0 5 0 10"  Grid.Column="1" Grid.Row="6" PlaceholderText="Enter Highest Grid Position" />
+            <TextBox BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="numberofGpTextBox" Width="300" Padding="5 5 0 5" Margin="0 5 0 10"  Grid.Column="1" Grid.Row="5" PlaceholderText="Enter Number of Gp's Participated" />
+
+            <TextBox BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="numberofChampionshipsTextbox" Width="300" Padding="5 5 0 5" Margin="0 5 0 10"  Grid.Column="1" Grid.Row="7" PlaceholderText="Enter Number of Champoinships won" />
+            <TextBox BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="numberofManufactureAwardsTextbox" Width="300" Padding="5 5 0 5" Margin="0 5 0 10"  Grid.Column="1" Grid.Row="9" PlaceholderText="Enter Number of Manufacterer Awards" />
+
+            <TextBox BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="engineManufacturerTextbox" Width="300" Padding="5 5 0 5" Margin="0 5 0 10"  Grid.Column="1" Grid.Row="8" PlaceholderText="Enter Name of Manufacturer" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="4" Padding="5 5 0 5" Margin="75 -5 0 10">
+                <RadioButtons x:Name="BackgroundRadioButtons" SelectedIndex="2"  MaxColumns="3" >
+                    <x:String>F1</x:String>
+                    <x:String>F2</x:String>
+                    <x:String>F3</x:String>
+                </RadioButtons>
+            </StackPanel>
+
+            <HyperlinkButton Margin="0 3 0 0" x:Name="goBackBtn" Grid.Row="10" Content="Go Back ?" Click="goBackHyperLinkBtn"/>
+            <StackPanel  Grid.Column="1" Grid.Row="10" VerticalAlignment="center" HorizontalAlignment="center" Margin="0 5 0 0">
+                <Button Width="300" Padding="5 5 0 5" x:Name="submiteditedInfo" Style="{StaticResource AccentButtonStyle}" Content="Update!" Click="EditBtnClicked" />
+            </StackPanel>
+        </Grid>
+
+
+            <Grid Grid.Column="1" >
+                <StackPanel Margin="0 0 0 0"  Grid.Row="2"   MaxHeight="350" MaxWidth="200"  HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <Button x:Name="ImageUploaderBtn" Margin="0 0 0 10" HorizontalAlignment="Center"  Style="{StaticResource AccentButtonStyle}"  Content="Select Image" Click="SelectImageButton_Click"/>
+                    <Button Margin="0 0 0 5" HorizontalAlignment="Center" Style="{StaticResource AccentButtonStyle}" Click="DeleteImageButton_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Delete" Margin="0,0,5,0"/>
+                            <TextBlock Text="Image"/>
+                        </StackPanel>
+                    </Button>
+
+                    <StackPanel BorderThickness="3" BorderBrush="#FF1717" CornerRadius="3  3  3  3">
+                        <Image HorizontalAlignment="Center" x:Name="SelectedImage" Source="ms-appx:///Assets/Images/userImage.png" Stretch="UniformToFill"/>
+
+                        <!--<TextBlock TextAlignment="Center" x:Name="wrongPassword" Style="{StaticResource SubtitleTextBlockStyle}" Foreground="#fff"  FontFamily="Nico Moji" FontStyle="Normal" LineHeight="1" CharacterSpacing="100" />-->
+                    </StackPanel>
+                </StackPanel>
+            </Grid>   
+    </Grid>
+    </Grid>
+</Page>

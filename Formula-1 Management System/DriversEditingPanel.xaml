@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Formula_1_Management_System.DriversEditingPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Formula_1_Management_System"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#33333366">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="650"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" >
+            <Grid Margin="0 5 0 5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="325"/>
+                    <ColumnDefinition Width="325"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" BorderThickness="0 0 2 0" BorderBrush="#fff" >
+                    <StackPanel>
+                        <TextBlock Text="Driver-1" TextAlignment="Center"  Foreground="#fff"  FontFamily="Nico Moji" Style="{StaticResource TitleTextBlockStyle}"/>
+                        <Grid Margin="0 10 0 0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        
+                        
+                        <TextBox  Grid.Row="0"  BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverOneName" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Name of Driver-1" />
+                        <TextBox  Grid.Row="1"   BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverOneAge" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Age of Driver-1" />
+                        <TextBox  Grid.Row="2"  BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverOneCountry" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Country of Driver-1" />
+                        <TextBox  Grid.Row="3"  BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverOnePodiums" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Podiums of Driver-1" />
+                        <TextBox  Grid.Row="4"   BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverOneRacesWon" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Races Won By Driver-1" />
+                        <TextBox  Grid.Row="5"  BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverOneSprintsWon" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Sprints Won By Driver-1" />
+                        <TextBox  Grid.Row="6"  BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverOneChampionshipsWon" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Championships Won By Driver-1" />
+
+                            <TextBox Grid.Row="7" x:Name="TextBoxDriverOneDescription" MinHeight="100"  TextChanged="TextBox_KeyDown" BorderThickness="0.5" BorderBrush="WhiteSmoke"  Padding="5 5 0 5" Margin="0 10 0 10" AutomationProperties.Name="multi-line TextBox" TextWrapping="Wrap" AcceptsReturn="True" IsSpellCheckEnabled="True" SelectionHighlightColor="red"  Width="300" PlaceholderText="Driver-1 Description"/>
+                      </Grid>
+                    </StackPanel>
+                </Border>
+
+
+                <Border Grid.Column="1" BorderThickness="0 0 2 0" BorderBrush="#fff">
+
+                    <StackPanel>
+                        <TextBlock Text="Driver-2" TextAlignment="Center"  Foreground="#fff"  FontFamily="Nico Moji" Style="{StaticResource TitleTextBlockStyle}"/>
+                        <Grid Margin="0 10 0 0">
+                            
+                            <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                          </Grid.RowDefinitions>
+
+
+                          <TextBox  Grid.Row="0"  BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverTwoName" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Name of Driver-2" />
+                          <TextBox  Grid.Row="1"   BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverTwoeAge" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Age of Driver-2" />
+                          <TextBox  Grid.Row="2"  BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverTwoCountry" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Country of Driver-2" />
+                          <TextBox  Grid.Row="3"  BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverTwoPodiums" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Podiums of Driver-2" />
+                          <TextBox  Grid.Row="4"   BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverTwoRacesWon" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Races Won By Driver-2" />
+                          <TextBox  Grid.Row="5"  BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverTwoSprintsWon" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Sprints Won By Driver-2" />
+                          <TextBox  Grid.Row="6"  BorderThickness="0.5" BorderBrush="WhiteSmoke" x:Name="TextBoxDriverTwoChampionshipsWon" Width="300" Padding="5 5 0 5" Margin="0 10 0 10"   PlaceholderText="Championships Won By Driver-2" />
+
+                            <TextBox Grid.Row="7" x:Name="TextBoxDriverTwoDescription" MinHeight="100"  TextChanged="TextBox_KeyDown" BorderThickness="0.5" BorderBrush="WhiteSmoke"  Padding="5 5 0 5" Margin="0 10 0 10" AutomationProperties.Name="multi-line TextBox" TextWrapping="Wrap" AcceptsReturn="True" IsSpellCheckEnabled="True" SelectionHighlightColor="red" Width="300" PlaceholderText="Driver-1 Description"/>
+                       </Grid>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+        <Border Grid.Column="1">
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" BorderThickness="0 0 0 2" Margin="4  4 4 4" BorderBrush="#fff">
+                    <StackPanel HorizontalAlignment="Center">
+                        <!--For Image of Driver Two-->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Margin="5 5 0 0"   MaxHeight="150" MaxWidth="150"  HorizontalAlignment="Center" VerticalAlignment="Center" >
+                            <Button x:Name="ImageUploaderBtnDriverOne" Margin="0 0 0 10" HorizontalAlignment="Center"  Style="{StaticResource AccentButtonStyle}"  Content="Select Image" Click="UploadImage_DriverOne_Click"/>
+                                <Button Margin="0 0 0 5" HorizontalAlignment="Center" Style="{StaticResource AccentButtonStyle}" Click="DeleteImageButtonDriverOne_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <SymbolIcon Symbol="Delete" Margin="0,0,5,0"/>
+                                    <TextBlock Text="Image"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <StackPanel Margin="15 5 3 5" MaxHeight="150" MaxWidth="150" BorderThickness="3" BorderBrush="#FF1717" CornerRadius="3  3  3  3">
+                                    <Image MaxHeight="140" MaxWidth="150" HorizontalAlignment="Center" x:Name="SelectedImageDriverOne" Source="ms-appx:///Assets/Images/userImage.png" Stretch="UniformToFill"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                     <!--For Image of Driver Two-->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Margin="5 5 0 0"   MaxHeight="150" MaxWidth="150"  HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                <Button x:Name="ImageUploaderBtnDriverTwo" Margin="0 0 0 10" HorizontalAlignment="Center"  Style="{StaticResource AccentButtonStyle}"  Content="Select Image" Click="UploadImage_DriverTwo_Click" />
+                                <Button Margin="0 0 0 5" HorizontalAlignment="Center" Style="{StaticResource AccentButtonStyle}" Click="DeleteImageButtonDriverTwo_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <SymbolIcon Symbol="Delete" Margin="0,0,5,0"/>
+                                    <TextBlock Text="Image"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <StackPanel Margin="15 5 3 5" MaxHeight="150" MaxWidth="150" BorderThickness="3" BorderBrush="#FF1717" CornerRadius="3  3  3  3">
+                                    <Image MaxHeight="140" MaxWidth="150" HorizontalAlignment="Center" x:Name="SelectedImageDriverTwo" Source="ms-appx:///Assets/Images/userImage.png" Stretch="UniformToFill"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                    </StackPanel>
+                </Border>
+                <Border Grid.Row="1" >
+                    <StackPanel>
+                        <StackPanel HorizontalAlignment="Center"  Margin="0 80 0 0" >
+                            <Button  Width="200" Padding="5 5 0 5" x:Name="submittedDriverInfoBtn" Style="{StaticResource AccentButtonStyle}" Content="Update!" Click="EditBtnClicked" />
+                        </StackPanel>
+                        <HyperlinkButton HorizontalAlignment="Center" Margin="0 3 0 0" x:Name="goBackBtn" Grid.Row="10" Content="Go Back ?" Click="goBackHyperLinkBtn"/>
+                        <TextBlock Margin="3 5 0 0 " x:Name="ErrorTextBlock" Foreground="White"/>
+                    </StackPanel>
+                </Border>
+                
+            </Grid>
+            
+           
+        </Border>
+    
+    </Grid>
+</Page>
