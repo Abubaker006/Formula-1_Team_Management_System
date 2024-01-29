@@ -77,7 +77,7 @@ namespace Unit_Testing_Module
             {
                 if (isValidEmail(email))
                 {
-                    string mongoDbConnectionString = "mongodb+srv://abubakerNaeem:pakistan123@randomcluster.lrzzlt8.mongodb.net/?retryWrites=true&w=majority";
+                    string mongoDbConnectionString = "";
                     var dataBaseName = "myRegisterDb";
                     var usersCollectionName = "RegisteredUsersData";
 
