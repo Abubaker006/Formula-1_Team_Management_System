@@ -33,7 +33,7 @@ namespace Formula_1_Management_System
         {
             this.InitializeComponent();
         }
-        private bool isValidEmail(string email)
+        public bool isValidEmail(string email)
         { //check for the email if valid or not
             try
             {
@@ -73,7 +73,7 @@ namespace Formula_1_Management_System
             return await tcs.Task;
         }
 
-        private async void ForgotBtn_Clicked(object sender,RoutedEventArgs e)
+        public async void ForgotBtn_Clicked(object sender,RoutedEventArgs e)
         {
             if (sender is Button button && button == submitForgotButton)
             {
